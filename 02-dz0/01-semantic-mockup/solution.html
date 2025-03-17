@@ -1,4 +1,105 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <!-- Ваше решение -->
+    <head>
+        <meta charset="utf-8">
+        <title>Заголовок</title>
+        <style>
+            *, *::after, *::before {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                color: white;
+            }
+
+            header {
+                height: 15vh;
+                background-color: red;
+            }
+            header h1 {
+                height: 8vh;
+                line-height: 8vh;
+                text-align: center;
+            }
+            
+            nav {
+                height: 7vh;
+                text-align: center;
+                line-height: 7vh;
+                background-color: orange;
+            }
+            nav a {
+                margin-left: 10px;
+            }
+
+            main {
+                height: 70vh;
+                padding: 10px;
+                background-color: green;
+            }
+            
+            article {
+                background-color: blue;
+            }
+            article h2 {
+                padding: 15px;
+            }
+            article ol, article ul {
+                margin-left: 50px;
+                padding-bottom: 20px;
+            }
+            article:first-child {
+                margin-bottom: 5px;
+            }
+
+            footer {
+                height: 15vh;
+                background-color: rebeccapurple;
+
+            }
+            
+            footer p {
+                font-size: 32px;
+                text-align: center;
+                line-height: 15vh;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Header</h1>
+
+            <nav>
+                <a href="#">Navigation 1</a>
+                <a href="#">Navigation 2</a>
+                <a href="#">Navigation 3</a>
+            </nav>
+
+        </header>
+
+        <main>
+
+            <article>
+                <h2>Article 1</h2>
+                <ul>
+                    <li>Оригинальная трилогия</li>
+                    <li>Трилогия приквелов</li>
+                    <li>Трилогия сиквелов</li>
+                </ul>
+            </article>
+
+            <article>
+                <h2>Article 2</h2>
+                <ol>
+                    <li>Эпизод IV - Новая Надежда</li>
+                    <li>Эпизод V - Империя наносит ответный удар</li>
+                    <li>Эпизод VI - Возвращение джедая</li>
+                </ol>
+            </article>
+
+        </main>
+
+        <footer>
+            <p>Footer</p>
+        </footer>
+    </body>
 </html>

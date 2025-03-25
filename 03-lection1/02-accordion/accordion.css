@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
   .accordion__item {
-    padding: 24px 32px;
+    padding: 23px 31px;
     margin: 0 0 8px 0;
     background: #ffffff;
     border: 1px solid #acb5bd;
@@ -12,7 +12,7 @@
     margin-bottom: 0;
   }
   
-  .accordion__title {
+  .accordion__item-title {
     font-family: "Inter";
     font-style: normal;
     font-weight: 400;
@@ -21,7 +21,7 @@
     color: #212429;
   }
   
-  .accordion__content {
+  .accordion__item-content {
     margin-top: 16px;
     
     font-family: "Inter";

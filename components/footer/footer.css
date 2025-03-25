@@ -1,0 +1,41 @@
+.footer {
+    background: var(--white);
+    font-family: "Inter";
+}
+
+.footer--centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 48px;
+    text-align: center;
+
+    color: var(--black);
+}
+
+.footer__title-margin {
+    margin: 71px 0 32px 0;
+}
+
+.footer__content {
+    width: 640px;
+    
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+
+    color: var(--black);
+}
+
+.footer__content-magrin {
+    margin-bottom: 136px;
+}

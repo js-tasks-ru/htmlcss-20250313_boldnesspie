@@ -1,7 +1,7 @@
 /* BUTTON */
 .button {
     height: 48px;
-    padding: 0 20px;
+    padding: 0 30px;
     border: none;
     border-radius: 8px;
   
@@ -14,52 +14,42 @@
   
     cursor: pointer;
   }
+
+  .button:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
   
   /* BUTTON PRIMARY MODIFIER*/
-  .button-primary {
+  .button_primary {
     background: var(--primary);
     color: var(--white);
   }
   
-  .button-primary:disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
-  }
-  
-  .button-primary:not(:disabled):hover {
+  .button_primary:hover {
     transition: background 0.2s;
     background: #2342c0;
   }
   
   /* BUTTON SECONDARY MODIFIER*/
-  .button-secondary {
+  .button_secondary {
     background: var(--secondary);
     color: var(--white);
   }
   
-  .button-secondary:disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
-  }
-  
-  .button-secondary:not(:disabled):hover {
+  .button_secondary:hover {
     transition: background 0.2s;
     background: #5028c6;
   }
   
   /* BUTTON ALTERNATE MODIFIER*/
-  .button-alternate {
+  .button_alternate {
     border: 1px solid #acb5bd;
     background: var(--white);
     color: #495057;
   }
   
-  .button-alternate:disabled {
-    opacity: 0.3;
-    cursor: not-allowed;
-  }
-  
-  .button-alternate:not(:disabled):hover {
+  .button_alternate:hover {
     transition: border 0.5s;
     border: 1px solid #212429;
   }

@@ -19,7 +19,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    color: #212429;
+    color: var(--black);
   }
   
   .accordion__content {
@@ -29,6 +29,6 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    color: #495057;
+    color: var(--grey-4);
   }
   

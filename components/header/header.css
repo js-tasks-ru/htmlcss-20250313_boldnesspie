@@ -1,8 +1,10 @@
 .header {
+    padding: 96px 0 77px 0;
     background: var(--white);
 }
 
 .header__title {
+    margin: 0;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
@@ -10,8 +12,4 @@
     line-height: 64px;
 
     color: var(--black);
-}
-
-.header__title-margin {
-    margin: 96px 0 77px 0;
 }

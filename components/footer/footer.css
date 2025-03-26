@@ -1,15 +1,11 @@
 .footer {
     background: var(--white);
     font-family: "Inter";
-}
-
-.footer--centered {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding: 71px 0 136px 0;
 }
 
 .footer__title {
+    margin: 0 0 32px 0;
     font-style: normal;
     font-weight: 500;
     font-size: 38px;
@@ -19,13 +15,9 @@
     color: var(--black);
 }
 
-.footer__title-margin {
-    margin: 71px 0 32px 0;
-}
-
 .footer__content {
     width: 640px;
-    
+    margin: 0 auto;
 
     font-style: normal;
     font-weight: 400;
@@ -34,8 +26,4 @@
     text-align: center;
 
     color: var(--black);
-}
-
-.footer__content-magrin {
-    margin-bottom: 136px;
 }

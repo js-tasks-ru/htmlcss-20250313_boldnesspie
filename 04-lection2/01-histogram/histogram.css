@@ -1,18 +1,15 @@
 .histogram {
-    padding: 16px 24px 24px 24px;
     box-sizing: border-box;
-  
-    width: 354px;
-    height: 185px;
-  
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    padding: 16px 24px 24px;
   
     background: #ffffff;
     border: 1px solid #acb5bd;
     border-radius: 8px;
-
+  
+    display: flex;
+    flex-direction: column;
+    gap: 39px;
+  
     font-family: "Inter";
   }
   
@@ -27,7 +24,7 @@
     flex-direction: column;
     gap: 6px;
   }
-
+  
   .histogram__title {
     margin: 0;
   
@@ -44,10 +41,6 @@
     margin-top: 3px;
   
     font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: right;
     text-decoration: none;
   
     color: var(--blue);
@@ -71,10 +64,7 @@
   }
   
   .histogram__candle {
-    width: 9px;
-  }
-  
-  .histogram__candle_bg {
+    flex-grow: 1;
     background: var(--blue);
   }
   

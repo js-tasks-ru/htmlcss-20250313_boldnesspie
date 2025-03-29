@@ -1,5 +1,12 @@
 @import '../fonts/fonts.css';
 
+@import url("../../components/page/page.css");
+@import url("../../components/header/header.css");
+@import url("../../components/main/main.css");
+@import url("../../components/card/card.css");
+@import url("../../components/footer/footer.css");
+@import url("../../components/container/container.css");
+
 :root {
     --white: #ffffff;
     --black: #212429;
@@ -12,6 +19,8 @@
     --grey-3: #ACB5BD;
     --grey-4: #495057;
 
+    --main-bg: #F9FAFC;
+
     --error: var(--red);
     --success: var(--blue);
 
@@ -20,5 +29,7 @@
 }
 
 html, body {
+    height: 100%;
+    margin: 0;
     font-family: 'Roboto', sans-serif;
 }

@@ -9,12 +9,13 @@
     gap: 30px;
 }
 
-.main_padding {
+.main_inner {
     padding: 36px 0 0 0;
 }
 
 .main__grid {
     display: grid;
     grid-template-columns: 220px auto;
+    gap: 56px;
 }
 

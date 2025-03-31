@@ -1,6 +1,6 @@
 .calendar {
     box-sizing: border-box;
-    padding: 28px 30px 40px;
+    padding: 28px 26px 32px;
   
     border: 1px solid #acb5bd;
     border-radius: 8px;
@@ -18,7 +18,7 @@
     line-height: 24px;
     text-align: center;
   
-    color: #334d6e;
+    color: var(--blue-dark);
   }
   
   .calendar__wrapper {
@@ -43,21 +43,21 @@
     justify-content: center;
     align-items: center;
 
-    color: #334d6e;
+    color: var(--blue-dark);
   }
   
   .calendar__item_day {
-    color: #90a0b7;
+    color: var(--grey-3);
   }
   
   .calendar__item_start {
-    background: #4263eb;
-    color: white;
+    background: var(--blue-light);
+    color: var(--white);
   }
   
   .calendar__item_end {
-    background: #4263eb;
-    color: white;
+    background: var(--blue-light);
+    color: var(--white);
   }
   
   .calendar__item_range {

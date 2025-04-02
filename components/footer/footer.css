@@ -28,7 +28,7 @@
     color: var(--black);
 }
 
-.footer__header {
+.footer__text {
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -40,6 +40,6 @@
     color: var(--grey-3);
 }
 
-.footer_bg-grey {
+.footer_inner {
     background: var(--bg-grey);
 }

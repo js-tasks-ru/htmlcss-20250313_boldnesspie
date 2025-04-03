@@ -6,6 +6,8 @@
 @import url("../../components/card/card.css");
 @import url("../../components/footer/footer.css");
 @import url("../../components/container/container.css");
+@import url("../../components/menu/menu.css");
+@import url("../../components/component/component.css");
 
 :root {
     --white: #ffffff;
@@ -21,7 +23,7 @@
     --grey-3: #ACB5BD;
     --grey-4: #495057;
 
-    --main-bg: #F9FAFC;
+    --bg-grey: #F9FAFC;
 
     --error: var(--red);
     --success: var(--blue);

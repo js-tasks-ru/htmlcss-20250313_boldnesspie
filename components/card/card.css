@@ -1,17 +1,11 @@
 .card {
-    width: 100%;
-    height: 100%;
+    width: 164px;
+    height: 210px;
   
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  
+    font-family: "Inter";
+
     background: var(--white);
     border-radius: 8px;
-  }
-  
-  .card__preview {
-    flex-grow: 1;
   }
   
   .card__description {
@@ -20,7 +14,6 @@
   }
   
   .card__name {
-    font-family: "Inter";
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -31,7 +24,6 @@
   }
   
   .card__type {
-    font-family: "Inter";
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -43,7 +35,11 @@
   
   @media screen and (min-width: 768px) {
     .card {
+      width: 350px;
+      height: 367px;
       border-radius: 12px;
+
+      font-family: "Roboto";
     }
     .card__description {
       padding: 0 0 32px;
@@ -53,7 +49,6 @@
     .card__name {
       margin-bottom: 6px;
   
-      font-family: "Roboto";
       font-weight: 500;
       font-size: 21px;
       line-height: 25px;
@@ -62,7 +57,6 @@
     }
   
     .card__type {
-      font-family: "Roboto";
       font-size: 16px;
       line-height: 19px;
   

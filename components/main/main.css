@@ -1,21 +1,21 @@
 .main {
-    padding: 67px 0 204px 0;
+    padding: 23px 0;
     background: var(--bg-grey);
-}
+  }
 
-.main__cards {
+  .main__cards {
     display: flex;
     flex-flow: row wrap;
-    gap: 30px;
-}
-
-.main_inner {
-    padding: 36px 0 0 0;
-}
-
-.main__grid {
-    display: grid;
-    grid-template-columns: 220px auto;
-    gap: 56px;
-}
-
+    gap: 1rem;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .main {
+      padding: 67px 0 204px;
+    }
+  
+    .main__cards {
+      gap: 30px;
+    }
+  }
+  

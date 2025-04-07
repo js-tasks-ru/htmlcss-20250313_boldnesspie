@@ -48,13 +48,13 @@
     display: block;
 }
 
-.help-icon {
+.tooltip__help-icon {
     width: 24px;
     height: 24px;
     color: var(--black);
 }
 
-.help-icon:hover {
+.tooltip__help-icon:hover {
     transition: color .3s ease;
     color: var(--grey-3);
 }

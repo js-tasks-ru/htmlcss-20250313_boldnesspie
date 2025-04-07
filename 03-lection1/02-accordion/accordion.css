@@ -28,7 +28,7 @@
     cursor: pointer;
   }
 
-  .accordion__item[open] .arrow-icon {
+  .accordion__item[open] .accordion__arrow-icon {
     transform: rotate(180deg);
     transition: transform .3s ease;
   }
@@ -43,7 +43,7 @@
     color: var(--grey-4);
   }
   
-  .arrow-icon {
+  .accordion__arrow-icon {
     width: 16px;
     height: 16px;
     color: var(--black);

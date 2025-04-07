@@ -53,13 +53,13 @@
     right: 12px;
   }
   
-  .close-icon {
+  .modal__close-icon {
     width: 16px;
     height: 16px;
     color: var(--black);
   }
 
-  .close-icon:hover {
+  .modal__close-icon:hover {
     transition: color .3s ease;
     color: var(--grey-3)
   }

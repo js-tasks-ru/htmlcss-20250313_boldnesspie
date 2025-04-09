@@ -23,13 +23,16 @@
     border: 1px solid var(--grey-2);
     border-radius: 50%;
     background: var(--white);
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .radio__icon {
+    display: none;
+
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
     width: 18px;
     height: 18px;
     border-radius: 50px;
@@ -45,7 +48,9 @@
     color: var(--grey-4);
 }
 
+/* RADIO CHECKED */
 .radio__input:checked ~ .radio__state .radio__icon {
+    display: block;
     background: var(--blue-light);
 }
 
@@ -53,6 +58,7 @@
     border: 2px solid var(--blue-light);
 }
 
+/* RADIO DISABLED */
 .radio__input:disabled ~ .radio__state .radio__legend {
     color: var(--grey-2);
 }
@@ -63,4 +69,9 @@
 
 .radio__input:disabled ~ .radio__state {
     pointer-events: none;
+}
+
+/* RADIO FOCUS */
+.radio__input:checked ~ .radio__state .radio__control {
+    border-color: var(--blue-light);
 }

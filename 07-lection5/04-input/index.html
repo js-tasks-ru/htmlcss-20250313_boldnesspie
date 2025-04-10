@@ -6,17 +6,56 @@
         <link rel="stylesheet" href="./input.css">
     </head>
     <body>
-        <div class="input">
-            <input type="text" name="field" class="input__text" placeholder="Placeholder">
-        </div>
-        <div class="input">
-            <input type="text" name="field" class="input__text" value="Filled Input">
-        </div>
-        <div class="input input_valid">
-            <input type="text" name="field" class="input__text" value="Success">
-        </div>
-        <div class="input input_invalid">
-            <input type="text" name="field" class="input__text" value="Error">
-        </div>
+        <label class="input">
+            <span class="input__legend">Label</span>
+            <div class="input__wrapper">
+                <input type="text" name="field" class="input__field" placeholder="Placeholder">
+                <svg class="success-icon">
+                    <use href="../../assets/images/icons.svg#success"></use>
+                </svg>
+                <svg class="error-icon">
+                    <use href="../../assets/images/icons.svg#error"></use>
+                </svg>
+            </div>
+        </label>
+
+        <label class="input">
+            <span class="input__legend">Focus</span>
+            <div class="input__wrapper">
+                <input type="text" name="field" class="input__field" placeholder="Placeholder">
+                <svg class="success-icon">
+                    <use href="../../assets/images/icons.svg#success"></use>
+                </svg>
+                <svg class="error-icon">
+                    <use href="../../assets/images/icons.svg#error"></use>
+                </svg>
+            </div>
+        </label>
+
+        <label class="input">
+            <span class="input__legend">Success</span>
+            <div class="input__wrapper input__success">
+                <input type="text" name="field" class="input__field" placeholder="Placeholder">
+                <svg class="success-icon">
+                    <use href="../../assets/images/icons.svg#success"></use>
+                </svg>
+                <svg class="error-icon">
+                    <use href="../../assets/images/icons.svg#error"></use>
+                </svg>
+            </div>
+        </label>
+
+        <label class="input">
+            <span class="input__legend">Error</span>
+            <div class="input__wrapper input__error">
+                <input type="text" name="field" class="input__field" placeholder="Placeholder">
+                <svg class="success-icon">
+                    <use href="../../assets/images/icons.svg#success"></use>
+                </svg>
+                <svg class="error-icon">
+                    <use href="../../assets/images/icons.svg#error"></use>
+                </svg>
+            </div>
+        </label>
     </body>
 </html>

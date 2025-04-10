@@ -1,0 +1,60 @@
+.input {
+    position: relative;
+    display: inline-block;
+}
+
+.input::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    transform: translateY(-50%);
+
+    width: 24px;
+    height: 24px;
+    pointer-events: none;
+  }
+
+.input__text {
+    box-sizing: border-box;
+    padding: 17px 44px 13px 24px; 
+    height: 56px;
+
+    background: var(--white);
+    border: 1px solid var(--grey-1);
+    border-radius: 8px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+
+    color: var(--grey-4);
+
+    outline: none;
+}
+
+/* INPUT FOCUS */
+.input__text:focus {
+    border-color: var(--blue-light);
+}
+  
+
+/* INPUT SUCCESS */
+.input_valid::after {
+    mask-image: url("../../assets/images/success.svg");
+    -webkit-mask-image:url("../../assets/images/success.svg");
+    background-color: var(--success);
+}
+
+/* INPUT ERROR */
+.input_invalid {
+    border: 1px solid var(--error);
+    border-radius: 8px;
+}
+.input_invalid::after {
+    mask-image: url("../../assets/images/error.svg");
+    -webkit-mask-image:url("../../assets/images/error.svg");
+    background-color: var(--error);
+}

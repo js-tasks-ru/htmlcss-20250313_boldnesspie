@@ -2,10 +2,50 @@
 <!-- Страница чекбокса -->
 <html lang="ru">
     <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
+        <link rel="stylesheet" href="../../assets/css/index.css">
         <link rel="stylesheet" href="./checkbox.css">
     </head>
     <body>
+        <label class="checkbox">
 
+            <input type="checkbox" class="checkbox__input" name="checkbox">
+
+            <div class="checkbox__state">
+                <div class="checkbox__control">
+                    <svg class="checkbox__icon">
+                        <use href="../../assets/images/icons.svg#checkbox"></use>
+                    </svg>
+                </div>
+                <div class="checkbox__legend">Default</div>
+            </div>
+        </label>
+
+        <label class="checkbox">
+
+            <input type="checkbox" class="checkbox__input" name="checkbox" checked>
+
+            <div class="checkbox__state">
+                <div class="checkbox__control">
+                    <svg class="checkbox__icon">
+                        <use href="../../assets/images/icons.svg#checkbox"></use>
+                    </svg>
+                </div>
+                <div class="checkbox__legend">Default</div>
+            </div>
+        </label>
+
+        <label class="checkbox">
+
+            <input type="checkbox" class="checkbox__input" name="checkbox" disabled>
+
+            <div class="checkbox__state">
+                <div class="checkbox__control">
+                    <svg class="checkbox__icon">
+                        <use href="../../assets/images/icons.svg#checkbox"></use>
+                    </svg>
+                </div>
+                <div class="checkbox__legend">Default</div>
+            </div>
+        </label>
     </body>
 </html>

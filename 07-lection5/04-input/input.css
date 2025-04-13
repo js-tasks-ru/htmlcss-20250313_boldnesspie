@@ -3,6 +3,8 @@
 }
 
 .input__legend {
+    margin-bottom: 5px;
+
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
@@ -38,8 +40,9 @@
     outline: none;
 }
 
-.success-icon, .error-icon {
+.input__icon {
     display: none;
+    pointer-events: none;
 }
 
 /* INPUT FOCUS */
@@ -48,7 +51,7 @@
 }
 
 /* INPUT SUCCESS */
-.input__success .success-icon{
+.input_success .input__icon_success {
     position: absolute;
     bottom: 50%;
     right: 16px;
@@ -62,7 +65,7 @@
 }
 
 /* INPUT ERROR */
-.input__error .error-icon{
+.input_error .input__icon_error {
     position: absolute;
     bottom: 50%;
     right: 16px;
@@ -75,7 +78,6 @@
     color: var(--error);
 }
 
-.input__error {
+.input_error .input__field{
     border: 1px solid var(--error);
-    border-radius: 8px;
 }

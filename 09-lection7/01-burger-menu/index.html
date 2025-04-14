@@ -8,43 +8,39 @@
         <script defer src="./burger-menu.js"></script>
     </head>
     <body>
-        <svg id="burger-menu-open" class="burger-menu__open">
-            <use href="../../assets/images/icons.svg#burger-menu"></use>
-        </svg>
+        <button id="burger-menu-open">
+            <svg class="icon-menu-open">
+                <use href="../../assets/images/icons.svg#burger-menu"></use>
+            </svg>
+        </button>
 
         <div class="burger-menu" id="burger-menu">
-            <div class="container">
-                <div class="burger-menu__button">
-                    <svg id="burger-menu-close" class="burger-menu__close">
-                        <use href="../../assets/images/icons.svg#close"></use>
-                    </svg>
+                <div class="burger-menu__header">
+                    <button class="burger-menu__button-close">
+                        <svg id="burger-menu-close" class="burger-menu__close">
+                            <use href="../../assets/images/icons.svg#close"></use>
+                        </svg>
+                    </button>
                 </div>
 
-                <div class="burger-menu__inner">
-                    <div class="burger-menu__wrapper burger-menu__wrapper_theme">
-                        <div class="burger-menu__theme-title">Dark mode</div>
-                        <div>Toggler</div>
-                    </div>
-
-                    <div class="burger-menu__wrapper">
-                        <h5 class="burger-menu__title">Elements</h5>
-                        <a href="#" class="burger-menu__link">Avatar</a>
-                        <a href="#" class="burger-menu__link">Custom form elements</a>
-                        <a href="#" class="burger-menu__link">Button</a>
-                        <a href="#" class="burger-menu__link">Avatar</a>
-                        <a href="#" class="burger-menu__link">Custom form elements</a>
-                        <a href="#" class="burger-menu__link">Button</a>
-                    </div>
-                    
-                    <div class="burger-menu__wrapper">
-                        <h5 class="burger-menu__title">Containers</h5>
-                        <a href="#" class="burger-menu__link">Avatar</a>
-                        <a href="#" class="burger-menu__link">Custom form elements</a>
-                        <a href="#" class="burger-menu__link">Button</a>
-                        <a href="#" class="burger-menu__link">Avatar</a>
-                        <a href="#" class="burger-menu__link">Custom form elements</a>
-                        <a href="#" class="burger-menu__link">Button</a>
-                    </div>
+                <div class="burger-menu__section">
+                    <h5 class="burger-menu__title">Elements</h5>
+                    <a href="#" class="burger-menu__link">Avatar</a>
+                    <a href="#" class="burger-menu__link">Custom form elements</a>
+                    <a href="#" class="burger-menu__link">Button</a>
+                    <a href="#" class="burger-menu__link">Avatar</a>
+                    <a href="#" class="burger-menu__link">Custom form elements</a>
+                    <a href="#" class="burger-menu__link">Button</a>
+                </div>
+                
+                <div class="burger-menu__section">
+                    <h5 class="burger-menu__title">Containers</h5>
+                    <a href="#" class="burger-menu__link">Avatar</a>
+                    <a href="#" class="burger-menu__link">Custom form elements</a>
+                    <a href="#" class="burger-menu__link">Button</a>
+                    <a href="#" class="burger-menu__link">Avatar</a>
+                    <a href="#" class="burger-menu__link">Custom form elements</a>
+                    <a href="#" class="burger-menu__link">Button</a>
                 </div>
             </div>
         </div>

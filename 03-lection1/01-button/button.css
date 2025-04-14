@@ -20,6 +20,11 @@
     pointer-events: none;
   }
   
+  .button:active {
+    transform: translateY(1px);
+  }
+
+
   /* BUTTON PRIMARY MODIFIER*/
   .button_primary {
     background: var(--primary);
@@ -28,7 +33,7 @@
   
   .button_primary:hover {
     transition: background 0.2s;
-    background: #2342c0;
+    background: var(--blue-light);
   }
   
   /* BUTTON SECONDARY MODIFIER*/

@@ -48,6 +48,7 @@
 /* INPUT FOCUS */
 .input__field:focus {
     border-color: var(--blue-light);
+    transition: border-color .3s ease
 }
 
 /* INPUT SUCCESS */

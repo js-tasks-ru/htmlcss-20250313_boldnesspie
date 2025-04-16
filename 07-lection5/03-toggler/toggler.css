@@ -35,7 +35,7 @@
 
     border-radius: 50%;
     background: var(--grey-2);
-    transition: left .3s ease;
+    transition: left .3s linear, background-color .3s;
 }
 
 .toggler__legend {

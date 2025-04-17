@@ -7,24 +7,10 @@
     </head>
     <body>
         <div class="input">
-            <label class="input__legend">Label</label>
+            <label for="input__default" class="input__legend">Label</label>
 
             <div class="input__wrapper">
-                <input type="text" name="field" class="input__field" placeholder="Placeholder">
-                <svg class="input__icon input__icon_success">
-                    <use href="../../assets/images/icons.svg#success"></use>
-                </svg>
-                <svg class="input__icon input__icon_error">
-                    <use href="../../assets/images/icons.svg#error"></use>
-                </svg>
-            </div>
-        </div>
-
-        <div class="input">
-            <label class="input__legend">Focus</label>
-
-            <div class="input__wrapper">
-                <input type="text" name="field" class="input__field" autofocus>
+                <input type="text" name="field" class="input__field" id="input__default" placeholder="Placeholder">
                 <svg class="input__icon input__icon_success">
                     <use href="../../assets/images/icons.svg#success"></use>
                 </svg>
@@ -35,10 +21,10 @@
         </div>
 
         <div class="input input_success">
-            <label class="input__legend">Success</label>
+            <label for="input__success" class="input__legend">Success</label>
 
             <div class="input__wrapper">
-                <input type="text" name="field" class="input__field">
+                <input type="text" name="field" class="input__field" id="input__success">
                 <svg class="input__icon input__icon_success">
                     <use href="../../assets/images/icons.svg#success"></use>
                 </svg>
@@ -49,10 +35,10 @@
         </div>
 
         <div class="input input_error">
-            <label class="input__legend">Error</label>
+            <label for="input__error" class="input__legend">Error</label>
 
             <div class="input__wrapper">
-                <input type="text" name="field" class="input__field">
+                <input type="text" name="field" class="input__field" id="input__error">
                 <svg class="input__icon input__icon_success">
                     <use href="../../assets/images/icons.svg#success"></use>
                 </svg>

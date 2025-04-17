@@ -22,7 +22,7 @@
 
 .input__field {
     box-sizing: border-box;
-    padding: 17px 24px 13px; 
+    padding: 1rem 3rem 1rem 1.5rem; 
     height: 56px;
 
     background: var(--white);
@@ -36,13 +36,19 @@
     line-height: 26px;
 
     color: var(--grey-4);
-
     outline: none;
 }
 
 .input__icon {
     display: none;
-    pointer-events: none;
+
+    position: absolute;
+    bottom: 50%;
+    right: 1rem;
+    transform: translateY(50%);
+
+    width: 1.5rem;
+    height: 1.5rem;
 }
 
 /* INPUT FOCUS */
@@ -53,29 +59,13 @@
 
 /* INPUT SUCCESS */
 .input_success .input__icon_success {
-    position: absolute;
-    bottom: 50%;
-    right: 16px;
-    transform: translateY(50%);
-
     display: block;
-    width: 24px;
-    height: 24px;
-
     color: var(--success);
 }
 
 /* INPUT ERROR */
 .input_error .input__icon_error {
-    position: absolute;
-    bottom: 50%;
-    right: 16px;
-    transform: translateY(50%);
-
     display: block;
-    width: 24px;
-    height: 24px;
-
     color: var(--error);
 }
 

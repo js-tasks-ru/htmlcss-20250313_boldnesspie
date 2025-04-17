@@ -41,7 +41,7 @@
 
 .skeleton__row {
     height: 20px;
-    background: linear-gradient(92.51deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);
+    background: var(--grey-2);
 }
 
 .skeleton__row_size-m {
@@ -52,4 +52,20 @@
 }
 .skeleton__row_size-f {
     width: 100%;
+}
+
+.skeleton__logo, .skeleton__row {
+    background: var(--bg-grey-gradient);
+    background-size: 200% 100%;
+    animation: backgroundMove 2s linear infinite;
+}
+
+@keyframes backgroundMove {
+    0% {
+        background-position: 100% 0;
+    }
+
+    100% {
+        background-position: -100% 0;
+    }
 }

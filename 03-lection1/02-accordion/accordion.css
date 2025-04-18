@@ -1,7 +1,3 @@
-:root {
-  interpolate-size: allow-keywords;
-}
-
 .accordion {
   display: flex;
   flex-direction: column;
@@ -60,6 +56,7 @@
 
 /* ONLY IF SUPPORTED */
 .accordion__item::details-content {
+  interpolate-size: allow-keywords;
   block-size: 0;
   transition: block-size .3s,
               content-visibility .3s;

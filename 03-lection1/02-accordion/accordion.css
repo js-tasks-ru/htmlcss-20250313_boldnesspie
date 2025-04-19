@@ -1,50 +1,68 @@
 .accordion {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+
   font-family: 'Inter';
 }
 
 .accordion__item {
-    padding: 24px 32px;
-    margin: 0 0 8px 0;
-    background: #ffffff;
-    border: 1px solid #acb5bd;
-    border-radius: 8px;
-  }
-  
-  .accordion__item:last-child {
-    margin-bottom: 0;
-  }
-  
-  .accordion__title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  padding: 24px 32px;
 
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: var(--black);
+  background: var(--white);
+  border: 1px solid var(--grey-2);
+  border-radius: 8px;
 
-    cursor: pointer;
-  }
+  overflow: hidden;
+}
 
-  .accordion__item[open] .accordion__arrow-icon {
-    transform: rotate(180deg);
-    transition: transform .3s ease;
-  }
+.accordion__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--black);
+
+  cursor: pointer;
+}
   
-  .accordion__content {
-    margin-top: 16px;
-    
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: var(--grey-4);
-  }
+.accordion__content {
+  padding: 1rem .5rem;
+  margin: 0;
   
-  .accordion__arrow-icon {
-    width: 16px;
-    height: 16px;
-    color: var(--black);
-  }
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--grey-4);
+}
+
+.accordion__arrow-icon {
+  width: 16px;
+  height: 16px;
+
+  color: var(--black);
+  transition: transform .3s ease;
+}
+
+.accordion__item[open] .accordion__arrow-icon {
+  transform: rotate(180deg);
+}
+
+
+/* ONLY IF SUPPORTED */
+.accordion__item::details-content {
+  interpolate-size: allow-keywords;
+  block-size: 0;
+  transition: block-size .3s,
+              content-visibility .3s;
+  transition-behavior: allow-discrete;
+}
+
+.accordion__item[open]::details-content {
+  block-size: auto;
+}
